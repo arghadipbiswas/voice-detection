@@ -7,6 +7,8 @@
     <meta charset='utf-8'>
     <title>Home</title>
 
+    <link href="v1.png" rel="icon">
+
 
                                     <meta name='viewport' content='width=device-width, initial-scale=1'>
                                     
@@ -51,6 +53,9 @@
     <title>Home</title>
   </head>
   <body>
+
+    <div id="preloader"><p>Please Wait</p></div>
+
     <nav class="shadow bg-body rounded navbar navbar-expand-lg bg-light">
       <div class="container-fluid">
         <nav class="navbar bg-light">
@@ -83,10 +88,10 @@
               <a class="nav-link" href="Tutorials.html" style=" margin: auto; margin-top: 10px; margin-left: 10px; padding: 10px; width: 100px;"><img src="video-tutorial.png" alt="">Tutorials</a>
             </li>
             <li class="nav-item px-3">
-              <a class="nav-link" href="subscription.html" style=" margin: auto; margin-top: 10px; margin-left: 10px; padding: px; width: 150px;"><img src="subscription3.png" alt="">Subscription</a>
+              <a class="nav-link" href="subscription.html" style=" margin: auto; margin-top: 10px; margin-left: 10px; padding-right: 20px; width: 150px;"><img src="subscription3.png" alt="">Subscription</a>
             </li>
             <li class="nav-item px-3">
-              <a class="nav-link" href="contact.html" style=" margin: auto; margin-top: 10px; width: 90px;"><img src="contact1.png" alt="">Contact</a>
+              <a class="nav-link" href="contact.html" style=" margin-top: 10px; width: 90px;"><img src="contact1.png" alt="">Contact</a>
             </li>
           </ul>
           <!-- dark -->
@@ -105,7 +110,7 @@
     }
 }); -->
 </script>
-          <form class="d-flex" role="search" style="margin-left: 35px;">
+          <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline"  type="submit"><img id="lol" src="search.png" alt=""></button>
           </form>
@@ -127,7 +132,7 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="1.jpg" class="d-block w-100" alt="...">
+                <img src="1.jpg"  class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                   <h5>Welcome to VCP</h5>
                   <p>voice Conversion PDF.</p>
@@ -331,7 +336,7 @@
                     Get a jump start on achieving your best concepts and works.</p>
                 </div>
                 <div class="col-md-5">
-                  <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="35.jpeg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em"></text></img>
+                  <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="250" src="35.jpeg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em"></text></img>
           
                 </div>
               </div>
@@ -414,6 +419,32 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     -->
+    <style>
+      #preloader{
+    background:#000 url(https://mir-s3-cdn-cf.behance.net/project_modules/max_316/5658cb68481015.5b5ee7a8e9183.gif) no-repeat center center ;
+    background-size: 15%;
+    height : 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+#preloader p{
+    text-align: center;
+    color: white;
+    padding-top: 21%;
+}
+
+    </style>
+
+    <script>
+      var loader = document.getElementById("preloader");
+
+      window.addEventListener("load" , function(){
+        loader.style.display ="none";
+      })
+      
+    </script>
+
   </body>
 </html>
 
